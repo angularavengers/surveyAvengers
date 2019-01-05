@@ -7,15 +7,15 @@ const port = 3001;
 
 const app = express();
 
-app.use(express.static(path.join(__dirname,"dist")));
+// app.use(express.static(path.join(__dirname,"dist")));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 app.use("/api",api);
 
 app.use("*",(req,res)=>{
-    console.log(__filename);
-    res.sendFile(path.join(__dirname,'dist/index.html'));
+    res.json("This is only demo app")
+    //res.sendFile(path.join(__dirname,'dist/index.html'));
 })
 
 app.listen(port,function(){
