@@ -1,0 +1,31 @@
+.container{
+    height: 100%;
+    padding: 0;
+}
+.headerMenu{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    border-radius: 50%;
+}
+
+.logo img{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.main{
+    height: 100%;
+    width: 80%;
+    border-radius: 40px 2px 40px 2px;
+    background-color:skyblue;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    margin: -20px auto;
+    font-family: fantasy;
+    box-sizing: border-box;
+}

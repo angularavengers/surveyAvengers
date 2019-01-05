@@ -1,0 +1,41 @@
+input[type="text"], input[type="password"]{
+    width:40%;
+    margin-left:30px;
+    margin-bottom:10px;
+    vertical-align: baseline  
+}
+
+label{
+    margin-left:30px;
+    margin-bottom:10px;
+    width: 15%  
+}
+
+.invalid-feedback{
+  color:red;
+}
+
+form{
+ margin: 20px;    
+}
+.invalid-feedback{
+    display: inline-block;
+    width: 20%;
+    font-weight: lighter !important;
+    margin: -6px 1px 2px 2px;
+}
+
+.UserType{
+  margin-left: 20%;
+}
+.UserType .invalid-feedback{
+    width: 40%;
+    font-weight: lighter !important;
+    margin-left:10%;    
+}
+
+.submitGroup
+{
+  margin-top: 10px;  
+  margin-left: 30%;  
+}

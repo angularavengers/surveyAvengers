@@ -1,0 +1,54 @@
+<div class="container" *ngIf="!total?.length">
+<form class="form" #f="ngForm" (ngSubmit)="questionUpdate(f)">
+    <div class="form-control">
+      <label>Number of Survey Questions</label>   
+      <input type="number" name="qnumber" ngModel> 
+    </div>
+
+    <div class="form-control">
+        <label>Scope of survey(like Employee Satisfaction, FMCG Product) </label>   
+        <input type="text" name="scope" ngModel> 
+    </div>
+    <div class="submitControl">
+        <button type="submit" class="btn btn-success">Next</button> 
+    </div>
+</form>
+ </div>
+
+<div *ngIf="total?.length">
+    <form class="form" #qdetails="ngForm" (ngSubmit)="questionDetails(qdetails)">
+       
+       <div *ngFor= "let q of total;let ind=index">
+           <div class="questionContainer" *ngIf="ind==currentValue"> 
+              
+              <div class="form-control">
+                  <label>{{ind+1}} OF {{total.length}} </label>   
+              </div>  
+            <div class="form-control">
+                <label>Enter Question Description/Text </label>   
+                <input type="text" name="qtext" ngModel>
+              </div>
+
+            <div class="form-control">
+                <label>Please select type of question </label>   
+                <select name="qtype" ngModel>
+                  <option value="1">Multi Choice question</option>
+                  <option value="2">Single Choice question</option>
+                  <option value="3">Open text</option>
+                  <option value="4">Open Number</option>
+                  <option value="5">Drop Down</option>  
+                </select>
+              </div>  
+        </div>
+      </div>
+      <div *ngIf="total.length==currentValue && total?.length!==0">
+          Thank you for submitting question please go to create question if you want to create more survey!!    
+       </div>
+   
+        <div class="submitControl">
+            <button type="submit" class="btn btn-success">Next</button> 
+        </div>
+    </form>
+</div> 
+ 
+ 

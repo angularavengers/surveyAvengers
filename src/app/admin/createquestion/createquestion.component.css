@@ -1,0 +1,18 @@
+.submitControl{
+   margin-top: 10px !important;
+}
+ label{
+    width: 60%;
+
+}
+.form-control{
+margin: 2% !important;
+}
+.container{
+    height: 100%;
+    margin: 2%
+}
+select,  input{
+    width:30%;
+    height: 100%;
+}

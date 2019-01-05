@@ -1,0 +1,22 @@
+.headerMenu{
+    margin-left:10%;
+    width:80%;
+    height: 20%;
+    font-size:14px 
+}
+.userProfilePanel{
+    margin-left:2%;
+    font-size:24px 
+}
+.main{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px 2px 40px 2px;
+    background-color:skyblue;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    margin: 2px -30px;
+    font-family: fantasy;
+    box-sizing: border-box;
+}

@@ -1,0 +1,9 @@
+{
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "git.ignoreLimitWarning": true,
+    "autoimport.autoComplete": true,
+    "typescript.suggest.autoImports": true,
+     "javascript.suggest.autoImports": true,
+    
+     
+}
