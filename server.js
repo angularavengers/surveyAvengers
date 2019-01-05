@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const api = require("./server/routes/api");
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -20,5 +20,5 @@ app.use("*",(req,res)=>{
 
 app.listen(port,function(){
     //alert(__dirname);
-    console.log("listeing at port 3000");
+    console.log("listeing at port 3000" + port);
 })
