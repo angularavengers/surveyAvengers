@@ -17,7 +17,7 @@ app.use(favicon(path.join(__dirname, '/favicon.ico')));
 app.use("/api",api);
 
 app.use("*",(req,res)=>{
-    res.json("This is only demo app")
+    // res.json("This is only demo app")
     res.sendFile(path.join(__dirname,'dist/index.html'));
 })
 

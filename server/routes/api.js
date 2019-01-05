@@ -13,6 +13,10 @@ mongoose.connect(db,{ useNewUrlParser: true },function(err){
  }
 })
 
+router.get("/",(req,res)=>{
+   res.status(200).json({data:"Parent router"})
+})
+
 router.get("/userLogin",(req,res)=>{
     userModel.find({})
     .exec((err,data)=>{
